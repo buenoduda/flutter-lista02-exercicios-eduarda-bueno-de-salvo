@@ -32,18 +32,18 @@ Em conformidade com as orientações do professor para este módulo, **não fora
 
 Este projeto serviu como guia prático para consolidar os tópicos:
 
-## 1. Rolagem com `ListView`
+### 1. Rolagem com `ListView`
 
-## 2. Otimização com `ListView.builder`
+### 2. Otimização com `ListView.builder`
 - **Propriedades centrais:**
   - `itemCount`: (ex: `lista.length`).
   - `itemBuilder: (context, index)`: Função executada para cada item, onde `index` (0, 1, 2...) permite recuperar o dado correspondente via `lista[index]`.
 
-## 3. Organização Visual com `Card` e `ListTile`
+### 3. Organização Visual com `Card` e `ListTile`
 
-## 4. Modelagem com Classes (`List<Objeto>`)
+### 4. Modelagem com Classes (`List<Objeto>`)
 
-## 5. Conteúdo Dinâmico e o uso do `Expanded`
+### 5. Conteúdo Dinâmico e o uso do `Expanded`
 - A lista é guardada no estado de um `StatefulWidget` e inicia vazia (`final List<Produto> produtos = [];`).
 - **`add()`:** Insere novos objetos na coleção dentro de um `setState()`.
 - **`removeAt(index)`:** Remove o item da posição exata clicada no `trailing`.
