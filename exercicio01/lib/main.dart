@@ -40,20 +40,17 @@ class TelaLinguagens extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Lista de Linguagens')),
       body: ListView.builder(
-        padding: const EdgeInsets.all(18),
         itemCount: linguagens.length,
         itemBuilder: (context, index) {
-          return Card(
-            child: ListTile(
-              leading: const Icon(
-                Icons.code,
-                size: 35,
-                color: Color.fromRGBO(0, 103, 79, 1.0), // opacidade de 0.0 a 1.0
-              ),
-              title: Text(
-                linguagens[index],
-                style: const TextStyle(fontWeight: FontWeight.bold),
-              ),
+          return ListTile(
+            leading: const Icon(
+              Icons.code,
+              size: 35,
+              color: Color.fromRGBO(0, 103, 79, 1.0),
+            ),
+            title: Text(
+              linguagens[index],
+              style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           );
         },
